@@ -1,0 +1,18 @@
+<div class="container py-8">
+  <h2 class="text-3xl font-bold text-center mb-8 text-foreground">My <span class="text-primary">Pets</span></h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div *ngFor="let pet of pets" [ngClass]="getPetCardClass(pet.type)" class="pet-card relative">
+      <div class="relative h-48 flex items-center justify-center">
+        <div [innerHTML]="getPetIcon(pet.type)" class="pet-icon"></div>
+      </div>
+      <div class="p-6 relative">
+        <h3 class="pet-name">{{ pet.name }}</h3>
+        <p class="pet-breed">{{ pet.breed }}</p>
+        <app-button variant="outline" class="w-full mt-4 pet-cta-button">View Details</app-button>
+      </div>
+    </div>
+  </div>
+  <div class="mt-8 text-center">
+    <app-button>Add New Pet</app-button>
+  </div>
+</div>

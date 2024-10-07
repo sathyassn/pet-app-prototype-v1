@@ -1,0 +1,10 @@
+/* Header-specific styles */
+.backdrop-blur-xl {
+  backdrop-filter: blur(24px);
+}
+
+/* Enhance text readability */
+.translate-x-0 a,
+.translate-x-0 button {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

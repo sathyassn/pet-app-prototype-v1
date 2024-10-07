@@ -1,0 +1,82 @@
+<div class="bg-background">
+  <!-- Hero Section -->
+  <section class="relative py-16 md:py-32 overflow-hidden bg-gradient-to-br from-primary/20 to-secondary/20">
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="abstract-shape shape-1"></div>
+      <div class="abstract-shape shape-2"></div>
+      <div class="abstract-shape shape-3"></div>
+    </div>
+    <div class="container relative">
+      <div class="max-w-3xl mx-auto text-center">
+        <h1 class="text-4xl md:text-7xl font-bold mb-6 leading-tight text-foreground">Welcome to <span class="text-primary">Geeno</span></h1>
+        <p class="text-xl md:text-2xl mb-10 text-muted-foreground">Your modern solution for pet care and management</p>
+        <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+          <app-button routerLink="/pets" size="lg" class="text-lg px-8 py-3">View My Pets</app-button>
+          <app-button routerLink="/appointments" variant="outline" size="lg" class="text-lg px-8 py-3">Book Appointment</app-button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-16 md:py-20">
+    <div class="container">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <app-card class="transition-transform hover:scale-105">
+          <app-card-header>
+            <div class="w-16 h-16 mb-4 text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+              </svg>
+            </div>
+            <app-card-title>Expert Pet Care</app-card-title>
+          </app-card-header>
+          <app-card-content>
+            <app-card-description>Professional care for your furry friends</app-card-description>
+          </app-card-content>
+        </app-card>
+
+        <app-card class="transition-transform hover:scale-105">
+          <app-card-header>
+            <div class="w-16 h-16 mb-4 text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <app-card-title>Easy Appointments</app-card-title>
+          </app-card-header>
+          <app-card-content>
+            <app-card-description>Book and manage appointments with ease</app-card-description>
+          </app-card-content>
+        </app-card>
+
+        <app-card class="transition-transform hover:scale-105">
+          <app-card-header>
+            <div class="w-16 h-16 mb-4 text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+              </svg>
+            </div>
+            <app-card-title>Health Tracking</app-card-title>
+          </app-card-header>
+          <app-card-content>
+            <app-card-description>Monitor your pet's health and vaccinations</app-card-description>
+          </app-card-content>
+        </app-card>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-16 md:py-20 bg-gradient-to-r from-secondary/20 to-primary/20">
+    <div class="container">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-foreground">About <span class="text-primary">Geeno</span></h2>
+        <p class="text-lg md:text-xl mb-10 text-muted-foreground">
+          Geeno is dedicated to providing the best care for your pets. Our team of experienced veterinarians and pet care specialists are committed to ensuring the health and happiness of your furry friends.
+        </p>
+        <app-button routerLink="/about" size="lg" variant="secondary" class="text-lg px-8 py-3">Learn More</app-button>
+      </div>
+    </div>
+  </section>
+</div>
